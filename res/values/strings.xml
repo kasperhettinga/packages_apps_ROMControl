@@ -332,6 +332,7 @@
     <string name="clock_date_string_edittext_summary">Enter string</string>
     <string name="colors">Colors</string>
     <string name="clock_color_title">Clock color</string>
+    <string name="notification_shade_clock">Notification Shade</string>
     <string name="alarm">Alarms</string>
     <string name="clock_options">Clock Options</string>
     <string name="nothing">Nothing</string>

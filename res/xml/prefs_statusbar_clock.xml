@@ -36,24 +36,6 @@
         android:entryValues="@array/clock_date_format_values"
         android:dependency="status_bar_show_clock" />
 
-    <ListPreference
-        android:entries="@array/notification_action_entries"
-        android:entryValues="@array/notification_action_values"
-        android:key="clock_shortclick"
-        android:title="@string/title_clock_shortclick" />
-
-    <ListPreference
-        android:entries="@array/notification_action_entries"
-        android:entryValues="@array/notification_action_values"
-        android:key="clock_longclick"
-        android:title="@string/title_clock_longclick" />
-
-    <ListPreference
-        android:entries="@array/notification_action_entries"
-        android:entryValues="@array/notification_action_values"
-        android:key="clock_doubleclick"
-        android:title="@string/title_clock_doubleclick" />
-
     <PreferenceCategory
         android:key="colors"
         android:title="@string/colors">
@@ -62,6 +44,30 @@
             android:key="clock_color"
             android:title="@string/clock_color_title"
             android:defaultValue="@android:color/holo_blue_light" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="notification_shade_clock"
+        android:title="@string/notification_shade_clock">
+
+        <ListPreference
+            android:entries="@array/notification_action_entries"
+            android:entryValues="@array/notification_action_values"
+            android:key="clock_shortclick"
+            android:title="@string/title_clock_shortclick" />
+
+        <ListPreference
+            android:entries="@array/notification_action_entries"
+            android:entryValues="@array/notification_action_values"
+            android:key="clock_longclick"
+            android:title="@string/title_clock_longclick" />
+
+        <ListPreference
+            android:entries="@array/notification_action_entries"
+            android:entryValues="@array/notification_action_values"
+            android:key="clock_doubleclick"
+            android:title="@string/title_clock_doubleclick" />
 
     </PreferenceCategory>
 
