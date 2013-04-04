@@ -15,11 +15,26 @@
         android:title="@string/title_clock_ampm_entries" />
 
     <ListPreference
-        android:key="clock_weekday"
-        android:title="@string/enable_clock_weekday"
-        android:summary="@string/enable_clock_weekday_summary"
-        android:entries="@array/clock_weekday_entries"
-        android:entryValues="@array/clock_weekday_values" />
+        android:key="clock_date_display"
+        android:title="@string/clock_date_display"
+        android:summary="@string/clock_date_display_summary"
+        android:entries="@array/clock_date_display_entries"
+        android:entryValues="@array/clock_date_display_values"
+        android:dependency="status_bar_show_clock" />
+
+    <ListPreference
+        android:key="clock_date_style"
+        android:title="@string/clock_date_style"
+        android:entries="@array/clock_date_style_entries"
+        android:entryValues="@array/clock_date_style_values"
+        android:dependency="status_bar_show_clock" />
+
+    <ListPreference
+        android:key="clock_date_format"
+        android:title="@string/clock_date_format"
+        android:entries="@array/clock_date_format_entries"
+        android:entryValues="@array/clock_date_format_values"
+        android:dependency="status_bar_show_clock" />
 
     <ListPreference
         android:entries="@array/notification_action_entries"
